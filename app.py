@@ -48,6 +48,11 @@ st.markdown("""
         .stMarkdown {
             text-align: center !important;
         }
+        .centered-canvas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 """, unsafe_allow_html=True)
 
@@ -64,6 +69,7 @@ stroke_width = st.sidebar.slider('Selecciona el ancho de línea', 1, 30, 5)
 stroke_color = "#000000" 
 bg_color = '#FFFFFF'
 
+st.markdown('<div class="centered-canvas">', unsafe_allow_html=True)
 canvas_result = st_canvas(
     fill_color="rgba(255, 165, 0, 0.3)",
     stroke_width=stroke_width,
@@ -74,6 +80,7 @@ canvas_result = st_canvas(
     drawing_mode=drawing_mode,
     key="canvas",
 )
+st.markdown('</div>', unsafe_allow_html=True)
 
 ke = st.text_input('Ingresa tu Clave')
 os.environ['OPENAI_API_KEY'] = ke
