@@ -35,10 +35,12 @@ st.markdown("""
         }
         .stTextInput > div > div > input {
             text-align: center;
+            color: black !important;
         }
         .stButton button {
             display: block;
             margin: 0 auto;
+            color: white !important;
         }
         .stSlider {
             text-align: center;
@@ -52,8 +54,8 @@ st.markdown("""
 st.markdown("<h1 style='text-align: center; color: black;'>Tablero Inteligente</h1>", unsafe_allow_html=True)
 
 with st.sidebar:
-    st.markdown("<h3 style='text-align: center; color: black;'>Acerca de:</h3>", unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; color: black;'>En esta aplicación veremos la capacidad que ahora tiene una máquina de interpretar un boceto</h4>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; color: #A4E055;'>Acerca de:</h3>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; color: #A4E055;'>En esta aplicación veremos la capacidad que ahora tiene una máquina de interpretar un boceto</h4>", unsafe_allow_html=True)
 
 st.markdown("<h4 style='text-align: center; color: black;'>Dibuja el boceto en el panel  y presiona el botón para analizarla</h4>", unsafe_allow_html=True)
 
